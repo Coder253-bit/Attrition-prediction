@@ -24,9 +24,11 @@ Transformation
   - RFE is used in this project to choose the 5 most significant features
   - The five features are Overtime, Business Travel Frequently, Department Research & Development, Job role Laboratory Technician, Marital Status Single
   - **First Model**: A simple logistic regression model with the chosen probability cut off of 0.1 giving the least number of False Negatives and maximum False Positives (Recall comes to 80.2% and precision 27.6%)
-  - **Second Model**: Oversampling the dataset reducing class 1s' imbalance. Choosing 0.1 as the probability cut off gives a recall of 100% and a precision of 50%
-  - **Third Model**: Undersampling the dataset reducing class 0s' imbalance. Choosing 0.1 as the probability cut off gives a recall of 100% and a precision of 50%
-  - **Fourth Model**: Using SMOTE gives a better accuracy than the other three, choosing 0.1 as the probability cut off gives a recall of 78.4% and a precision of 26.6%
+  - **Second Model**: Oversampling the dataset reducing class 1s' imbalance. Choosing 0.2 as the probability cut off gives a recall of 98% and a precision of 55%
+  - **Third Model**: Undersampling the dataset reducing class 0s' imbalance. Choosing 0.2 as the probability cut off gives a recall of 97% and a precision of 57%
+  - **Fourth Model**: Using SMOTE gives a better accuracy than the other three, choosing 0.2 as the probability cut off gives a recall of 55% and a precision of 41%
+
+**This project recommends using oversampling with a probability cut off of 0.2.**
 
 The END
 
